@@ -1,0 +1,26 @@
+/**
+*	@author long,415831615QQ.com
+*	@date 2015年6月5日 22:15:53;
+*/
+html{height:100%;}
+header,section{display: block;font-size:0;}
+body{background:#88E6DE;}
+.secTop{width: auto;height:170px;background:#FF9999;text-align: center;padding-top:30px;}
+.secTop h2{font-size:14px;color:#FFFF00;}
+.secTop img.top1,img.top2{display: block;margin:auto;}
+.secTop img.top2{margin-top:10px;margin-bottom:10px;}
+
+.seccenter img{display: block;border:none;}
+.secbott ul{padding:0 20px;font-size:12px;}
+.secbott ul li{color:#15887A;}
+.secbott ul li.bottLi{width:67px;height:20px;background: #189888;color:#B1EFEB;text-align:center;margin-bottom:5px;}
+.secbott a{display: block;border:none;background: url(../images/hint5.png) no-repeat;background-size:143px auto;margin:auto;width:143px;height:40px;}
+@media screen and (min-height: 600px) {
+	.secbott a{display: block;border:none;background: url(../images/hint5.png) no-repeat;background-size:143px auto;margin:auto;width:143px;height:40px;margin-top:20px;}
+}
+@media screen and (max-height: 480px) {
+	.secTop{width: auto;height:170px;background:#FF9999;text-align: center;padding-top:10px;}
+	.secTop h2{font-size:14px;color:#FFFF00;}
+	.secTop img.top1,img.top2{display: block;margin:auto;}
+	.secTop img.top2{margin-top:10px;margin-bottom:10px;}
+}

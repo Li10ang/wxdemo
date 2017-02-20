@@ -1,0 +1,30 @@
+#score{
+    text-align: center;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+    width:400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+#container{
+    position: relative;
+    top:-100px;
+    width: 100%;
+    height: 400px;
+    background: white;
+}
+.row{
+    width: 100%;
+    height: 100px;
+}
+.cellTile{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+.blackTile{
+    background: black;
+}

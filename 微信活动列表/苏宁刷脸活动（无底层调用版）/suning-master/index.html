@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+</head>
+<body>
+<img src="images/share618.png" alt="618" width="46" height="50" class="yearcen">
+<a href="#" class="suning"></a>
+<div class="brush_face">
+	<img src="images/index_btnbg.png" alt="" width="105px" height="105" class="btnbg">
+	<a href="#"><img src="images/index_btn.png" alt="刷脸" width="86" height="86"  id="img4"></a>
+</div>
+<div class="foot_rule">
+	<p>已有1828人刷到红包</p>
+	<h2>活动规则</h2>
+</div>
+<!-- 活动规则弹框 -->
+<div class="rulebg"></div>
+<div id="activi_rule">
+
+	<img src="images/ruleclose.png" alt="" width="22" height="22" class="rule_close">
+	<header>
+		<img src="images/ruletitle.png" alt="标题" width="250px" height="60">
+	</header>
+	<div class="fen"></div>
+
+	<section>
+
+		<ul>
+			<li>一、活动时间：
+				<ol>
+					<li>2015年6月10日-6月18日。</li>
+				</ol>
+			</li>
+			<li>二、参与资格：
+				<ol>
+					<li>1、参与用户需已注册微信账号。</li>
+					<li>2、为识别用户身份，便于红包发放，参与活动用户需拥有苏宁易购账号，凭苏宁易购账号领取红包。</li>
+				</ol>
+			</li>
+			<li>三、参与方式：
+				<ol>
+					<li>1、用户在本游戏中拍摄或本地选取提交大头照，即可参与互动并有机会获得XXX元红包，分享后获得。</li>
+					<li>2、用户分享活动信息，其朋友都可以继续参加本活动，并遵照本规则争夺红包。</li>
+				</ol>
+			</li>
+			<li>四、活动奖品
+				<ol>
+					<li>1、本活动奖品为XX元、XX元、XXX元红包，红包数量有限，先到先得，发完为止。</li>
+					<li>2、红包有效时间：2015年6月10日-6月18日，具体以红包使用提示信息为准，逾期
+					未使用视为自动放弃.</li>
+					<li>3、红包使用规则：<br>
+				         &nbsp;&nbsp; &nbsp;&nbsp;XX元红包     苏宁手机购物满XXX元减XX元<br>
+				          &nbsp;&nbsp; &nbsp;&nbsp;XX元红包     苏宁手机购物满XXX元减XX元<br>
+				          &nbsp;&nbsp; &nbsp;&nbsp;XXX元红包    苏宁手机购物满XXXX元减XXX元</li>
+				</ol>
+			</li>
+			<li>五、补充说明：
+				<ol>
+					<li>1、本活动所有红包优惠券均遵守苏宁易购优惠券使用的相关规定。</li>
+					<li>2、活动过程中，不正当得利（作弊、恶意攻击、恶意套现、扰乱系统等）的用户，苏宁易购有权终止其参与活动，取消其获奖资格，追回奖品。</li>
+					<li>3、如遇不可抗力（包括但不限于重大灾害、活动受政府单位要求停止举行或调整、活动中存在大面积作弊行为、活动遭受严重网络攻击或因系统故障导致活动中奖名单大范围出错、活动不能正常开展的），苏宁易购可修改、暂停或取消本活动，活动主办方可依照相关法律法规主张免责。</li>
+					<li>4、用户针对此活动的最终申诉日为2015年6月20日18：00前，逾期将不受理申诉。</li>
+					<li>5、苏宁易购保留在法律规定的范围内对上述规则进行解释的权利。</li>
+				</ol>
+			</li>
+		</ul>
+	</section>
+</div>
+<!-- 活动规则弹框结束 -->
+
+
+
+<script type="text/javascript">
+var rotation = function (){
+   $("#img4").rotate({
+      angle:0, 
+      animateTo:360, 
+      callback: rotation
+   });
+}
+rotation();
+//活动规则
+
+$(".foot_rule h2").click(function(){
+	$("#activi_rule").css({"display":"block","Zindex":"44"})
+	$(".rulebg").css({"display":"block","Zindex":"1"})
+})
+$("#activi_rule").click(function(){
+	$(this).css({"display":"none","Zindex":"44"});
+	$(".rulebg").css({"display":"none","Zindex":"1"})
+})
+</script>
+
+</body>
+</html>

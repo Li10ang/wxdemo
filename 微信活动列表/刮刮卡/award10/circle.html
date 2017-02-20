@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>camvas</title>
+		
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<canvas id="c1" width="300" height="200"></canvas>
+		
+		<script>
+			window.onload = function(){ 
+		    c1 = document.getElementById("c1");
+		    //这里很关键，canvas自带两个属性width、height,我理解为画布的分辨率，跟style中的width、height意义不同。
+		    //最好设置成跟画布在页面中的实际大小一样
+		    //不然canvas中的坐标跟鼠标的坐标无法匹配
+		    c1.width=c1.clientWidth;
+		    c1.height=c1.clientHeight;
+		    ctx = c1.getContext("2d");
+		    //PC端的处理
+//		    c1.addEventListener("mousemove",eventMove,false);
+//		    c1.addEventListener("mousedown",eventDown,false);
+//		    c1.addEventListener("mouseup",eventUp,false);
+		    //移动端的处理
+//		    c1.addEventListener('touchstart', eventDown,false);
+//		    c1.addEventListener('touchend', eventUp,false);
+//		    c1.addEventListener('touchmove', eventMove,false);
+		    //初始化
+		    initCanvas();
+		    
+		    function initCanvas(){//网上的做法是给canvas设置一张背景图片，我这里的做法是直接在canvas下面另外放了个div
+		     //c1.style.backgroundImage="url(中奖图片.jpg)";
+		     ctx.globalCompositeOperation = "source-over";
+		     ctx.fillStyle = '#aaaaaa';
+		     ctx.fillRect(0,0,c1.clientWidth,c1.clientHeight);
+		     ctx.fill();
+		     ctx.font = "Bold 30px Arial";
+		                 ctx.textAlign = "center";
+		                 ctx.fillStyle = "#999999";
+		                 ctx.fillText("刮一刮",c1.width/2,50);//把这个属性设为这个就可以做出圆形橡皮擦的效果
+		     //有些老的手机自带浏览器不支持destination-out,下面的代码中有修复的方法
+		     ctx.globalCompositeOperation = 'destination-out';
+		}
+		 }
+		</script>
+	</body>
+</html>

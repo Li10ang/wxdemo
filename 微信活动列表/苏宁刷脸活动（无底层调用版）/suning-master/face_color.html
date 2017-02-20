@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>颜值</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/face_color.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<section class="face_top">
+	<img src="images/assessing.png" alt="" class="headphoto">
+	<img src="images/faceTop.png" alt="" class="photobg">
+	<img src="images/yan.png" alt="" width="90" height="20" class="yan">
+</section>
+<section class="face_bottom">
+	<img src="images/faceGrade1.png" alt="分数" width="50" height="30" class="grade">
+	<img src="images/faceGrade2.png" alt="分数" width="50" height="30" class="grade">
+	
+	
+	<!-- <div class="facePaper">距离Apple watch只有0.001mm，
+						<img src="images/facePacket.png" alt="红包" width="109" height="22">先拿上，再战！
+	</div> -->
+	<div class="facePaper">离Apple watch有点远，
+						<img src="images/facePacket.png" alt="红包" width="109" height="22">安慰下~
+	</div>
+	<a href="#"></a>
+</section>
+<!-- 分享遮罩 -->
+<div class="mask">
+	<img src="images/shareArrow.png" alt="" width="62" height="53" class="img1">
+	<img src="images/shareTitle.png" alt="" width="302" height="85" class="img2">
+	<img src="images/share618.png" alt="" width="46" height="49" class="img3">
+	<img src="images/shareSn.png" alt="" width="105" height="33" class="img4">
+</div>
+<script>
+	$(".face_bottom a").click(function(){
+		$(".mask").css("display","block");
+	})
+	$(".mask").click(function(){
+		$(this).css("display","none")
+	})
+</script>
+</body>
+</html>

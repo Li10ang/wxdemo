@@ -1,0 +1,24 @@
+/**
+*
+*	@author long,415831615QQ.com
+*	@date 2015年6月4日 17:21:16;
+*/
+@charset "utf-8";
+html,body{width:100%;margin:0;padding:0;/*-webkit-tap-highlight-color:transparent*/}
+html{background-color:#f0f0f0;height:100%}
+body{font:normal 14px/22px Arial,"Microsoft YaHei";color:#999999;background-color:#fff;max-width:640px;margin:0 auto;min-height:100%}/*46px tool_bar f5f5f5 e3e2e2*/
+section,footer,nav,em,mark,p,span,ul,li,ol,h1,h2,h3,h4,input,textarea{margin:0;padding:0;font-weight:normal;list-style:none;font-style:normal}
+input,textarea,select{border:none;outline:none;/*-webkit-user-modify:read-write-plaintext-only*/}
+mark{background-color:transparent}
+img{border:none;vertical-align:bottom}
+a{color:#323232;outline-style:none;text-decoration:none}
+a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);border:0;}
+.left{float:left;}
+.right{float:right;}
+.cl{clear:both;}
+.bgff9{background-color:#ff9116;}
+.bgff6{background-color:#ff6a6f;}
+.bg7bc{background-color:#7bcefa;}
+.bgc8a{background-color:#c8a063;}
+.bg1ec{background-color:#1ec18e;}
+.bg9e6{background-color:#9e67e5;}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">        
+<title>砸金蛋页面</title>
+<link href="css/home2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header><img src="images/banner2.jpg"></header>
+<section>
+	<div id="lord1"><img src="images/egg1.png"></div>
+	<div id="lord2"><img src="images/egg1.png"></div>
+	<div id="lord3"><img src="images/egg1.png"></div>
+    <div class="clear"></div>
+</section>
+<footer><img src="images/logo.jpg"></footer>
+<div id="pop">
+	<div id="close"><img src="images/close_03.png" width="46"></div>
+    <div id="text"><p id="word">获得由招商银行为您</br>提供的<span>70M</span>全国流量</p></div>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(e) {
+        $('section div').click(function(e) {
+	    $("img[src='images/egg1.png']").attr('src','images/egg2.png');
+            $('#pop').fadeIn();
+			
+        });
+	$('#close').click(function(e) {
+            $('#pop').fadeOut();
+	    $("img[src='images/egg2.png']").attr('src','images/egg1.png');
+        });
+    });
+</script>
+</body>
+</html>

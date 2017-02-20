@@ -1,0 +1,26 @@
+/**
+*	@author long,415831615QQ.com
+*	@date 2015年6月7日 16:43:07;
+*/
+
+html,body{height:100%;}
+body{position:relative;background-color: #FC89AB;}
+.face_top{width: 100%;height: 62%;display: block;position:relative;overflow:hidden;}
+.face_top img.headphoto{position:absolute;left:8%;top:16%;width:100%;height:100%;}
+.face_top img.photobg{position:absolute;left: 0;top: 0;width:100%;height:100%;}
+.face_top img.yan{position:absolute;left:50%;top: 8%;margin-left:-10px;}
+.face_bottom{he ight:30%;background-color:#FC89AB;text-align:center;padding-bottom:20px;}
+.face_bottom div.facePaper{font-size:16px;color:white;line-height: 24px;margin:5px auto;text-align:center;width: 250px;}
+.face_bottom div.facePaper img{display: inline-block;}
+.face_bottom a{display: block;width:240px;height: 72px;background:url(../images/faceShare.png) no-repeat;background-size:240px auto;margin:0 auto;}
+@media screen and (min-width: 360px) {
+	.face_bottom div.facePaper{font-size:16px;color:white;line-height: 24px;margin:10px auto;text-align:center;width: 250px;}
+
+}
+/*share遮罩*/
+.mask{width:100%;height: 100%;background: #371A31;opacity:0.86;filter:alpha(opacity="86");position:absolute;left:0;top: 0;display: none;}
+.mask img{display: block;position:absolute;z-index:2;}
+.mask .img1{right:3%;top:3%;}
+.mask .img2{left:50%;margin-left:-150px;top:50%;margin-top:-100px;}
+.mask .img3{left:50%;margin-left:-70px;top:50%;margin-top:5%;}
+.mask .img4{left:50%;margin-left:-10px;top:50%;margin-top:7%;}

@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* 效果CSS开始 */
+* { margin: 0; padding: 0; }
+.container { width: 100%; }
+.container .page { position: relative; color:#fff;}
+.container .page h1{ line-height:50px; display:block}
+.container .page1 img.no1 { position: absolute; left: 10px; top: 50px; -webkit-transition: all 1s ease 0s; }
+.container .page1.cur img.no1 { -webkit-transform: rotate(720deg); }
+.container .page1 img.no2 { position: absolute; left: 600px; top: 50px; -webkit-transition: all 1s ease 2s; }
+.container .page1.cur img.no2 { left: 30px; top: 100px; -webkit-transform: rotate(720deg); }
+.xiangxiatishi { position: fixed; bottom: 20px; left: 50%; -webkit-transform: translateX(-50%); -webkit-animation: dong 1s linear 0s infinite alternate; }
+@-webkit-keyframes dong {  from {
+bottom:20px;
+}
+to { bottom: 60px; }
+}
+/* 效果CSS结束 */

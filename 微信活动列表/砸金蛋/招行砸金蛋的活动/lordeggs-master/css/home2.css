@@ -1,0 +1,138 @@
+@charset "utf-8";
+ .ui-loader-default{
+     display:none;
+     }
+.ui-mobile-viewport{
+    border:none;
+    }
+.ui-page {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    } 
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: none;
+}
+.clear {
+    clear: both;
+}
+input, select, textarea {
+    outline: none;
+}
+header, section, footer {
+    display: block;
+}
+html, body {
+    height: 100%;
+    font-family: "微软雅黑";
+	background:#fef4da
+}
+header{
+	width:100%;
+	overflow:hidden;
+	}
+header img{
+	width:100%;
+	}
+section{
+	width:90%;
+	margin:0 auto;
+	position:relative;
+	}
+section img{
+	width:70%;
+	text-align:center;
+	margin:0 auto;
+	}
+#lord1{
+	width:50%;
+	float:left;
+	position:absolute;
+	left:0;
+	top:0;
+	}
+#lord2{
+	width:50%;
+	float:right;
+	text-align:right;
+	position:absolute;
+	right:0;
+	top:0;
+	}
+#lord3{
+	padding-top:35%;
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	}
+#lord3 img{
+	width:35%;
+	}
+footer{
+	margin-top:20px;
+	text-align:center;
+	}
+footer img{
+	width:70px;
+	}
+#pop{
+	display:none;
+	position:fixed;
+	top:0;
+	height:100%;
+	width:100%;
+	z-index:999;
+	background:rgba(0,0,0,0.8);
+	}
+#close{
+	width:90%;
+	position:absolute;
+	right:5%;
+	top:10%;
+	margin-bottom:5%;
+	text-align:right;
+	z-index:999;
+	}
+#text{
+	width:95%;
+	margin:0 auto;
+	height:400px;
+	text-align:center;
+	position:relative;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+	background:url(../images/tanchu_03.png) no-repeat center top;
+	}
+#word{
+	font-size:16px;
+	font-weight:bold;
+	color:#fef4da;
+	line-height:20px;
+	position:absolute;
+	top:290px;
+	left:0;
+	right:0;
+	margin:auto;
+	}
+#word span{
+	font-weight:bold;
+	font-size:24px;
+	line-height:26px;
+	color:#ffcf53;
+	}	
+/* CSS Document */
+

@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width:1242px){
+	header{
+		width:100%;
+		}
+	footer{
+		width:100%;
+		}
+	section{
+		width:89%;
+		}
+	form{
+		padding-top:35%;
+		}
+	}
+@media screen and (max-width:1080px){
+section>form{
+	padding-top:25%;
+	 }
+	form .btn{
+		margin:50% 0 20% 0;
+		}
+	}
+@media screen and (max-width:900px){
+section>form{
+	padding-top:20%;
+	 }
+form input{
+	line-height:60px;
+	}
+form .tel{
+	height:60px;
+	}
+#yanzhengma{
+	height:60px;
+	}
+#yanzhengma .yanzheng{
+	height:60px;
+	}
+#yanzhengma .huoqu{
+	height:60px;
+	}
+form .btn{
+	margin:60% 0 20% 0;
+	height:60px;
+	}
+	}
+@media screen and (max-width:750px){
+section>form{
+	padding-top:20%;
+	 }
+form input{
+	line-height:60px;
+	}
+form .tel{
+	height:60px;
+	}
+#yanzhengma{
+	height:60px;
+	}
+#yanzhengma .yanzheng{
+	height:60px;
+	}
+#yanzhengma .huoqu{
+	height:60px;
+	}
+form .btn{
+	margin:40% 0 20% 0;
+	height:60px;
+	}
+	}
+@media screen and (max-width:640px){
+section>form{
+	padding-top:20%;
+	 }
+form input{
+	line-height:60px;
+	}
+form .tel{
+	height:60px;
+	}
+#yanzhengma{
+	height:60px;
+	}
+#yanzhengma .yanzheng{
+	height:60px;
+	}
+#yanzhengma .huoqu{
+	height:60px;
+	}
+form .btn{
+	margin:40% 0 20% 0;
+	height:60px;
+	}
+	}
