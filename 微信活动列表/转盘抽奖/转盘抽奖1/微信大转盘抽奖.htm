@@ -46,12 +46,23 @@
 		.cloud3{position: fixed;left: 0;top: 27%;width: 100px;}
 	}
 
-	#mark{width: 100%;height: 100%;background: rgba(0,0,0,0.5);position: fixed;top: 0;left: 0;display: none;}
+	#mark,.mask{width: 100%;height: 100%;background: rgba(0,0,0,0.5);position: fixed;top: 0;left: 0;display: none;}
 	.red-img{position: fixed;top: 10%;left: 5%;width: 90%;}
+	.share-btn{height: 15.5rem;line-height: 15.5rem;font-size: 2.4rem;color: #fff;text-align: center;}
+	.share-btn span{padding: 11px 27px;background: #fb7472;border-radius: 0.5rem;box-shadow: 0 3px 9px #222;}
+	.mask img{float: right;width: 75%;}
 </style>
 
 <script type="text/javascript" src="./微信大转盘抽奖_files/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="./微信大转盘抽奖_files/awardRotate.js"></script>
+<script type="text/javascript">
+	fontSize();
+	function fontSize(){
+		var html = document.getElementsByTagName("html")[0];
+		var w = document.documentElement.clientWidth||document.body.clientWidth;
+		html.style.fontSize = w*20/750 + "px";
+	}
+</script>
 
 <script type="text/javascript">
 var turnplate={
@@ -67,7 +78,7 @@ var turnplate={
 
 $(document).ready(function(){
 	//动态添加大转盘的奖品与奖品区域背景颜色
-	turnplate.restaraunts = ["碧根果一袋", "年货红包", "水果拼盘300元月卡", "2元现金红包", "夏威夷果一袋", "3元现金红包", "松子一袋 ", "5元现金红包"];
+	turnplate.restaraunts = ["碧根果1袋", "年货红包", "水果拼盘300元月卡", "2元现金红包", "夏威夷果一袋", "3元现金红包", "松子一袋 ", "5元现金红包"];
 	turnplate.colors = ["#FFFFFF","#5fcbd5", "#FFFFFF", "#5fcbd5", "#FFFFFF","#5fcbd5", "#FFFFFF", "#5fcbd5" ];
 
 	
@@ -322,6 +333,25 @@ function drawRouletteWheel() {
 	<div id="mark">
 		<img src="./微信大转盘抽奖_files/red5.png" class="red-img">
 	</div>
+	<div class="mask">
+		<img src="../../share-guide2.png" alt="" class="mask-img" />
+	</div>
+	<div class="share-btn">
+		<span>分享给朋友</span>
+	</div>
 	
+	<script type="text/javascript">
+		$(function(){
+			$('.share-btn span').on('click',function(){
+				$('.mask').show();
+				closeMask();
+			})
+		})
+		function closeMask(){
+			$('.mask').on('click',function(){
+				$(this).hide();
+			})
+		}
+	</script>
 
 </body></html>

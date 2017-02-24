@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>优惠券</title>
+		<style type="text/css">
+			html,body{padding: 0;margin: 0;background: #fff6e5;}
+			.content_box{text-align: center;}
+			.phone_num{box-sizing: border-box;width: 290px;height: 44px;border-radius: 3px;border: 2px solid #fea002;display:block;margin: 0 auto;margin-top: 26px;font-size: 18px;}
+			button{width: 290px;height: 44px;border-radius: 3px;border: 0;margin-top: 14px; background: #f63d5f;color: #fff;font-size: 18px;}
+			button:focus{outline:none!important;}
+		</style>
+	</head>
+	<body>
+		<div class="content_box">
+			<img src="./img/youhuiquan_02.jpg" alt="输手机号领优惠券" style="width: 100%;" />
+			<input type="number" class="phone_num" placeholder="输手机号领优惠券" maxlength="11" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+			<button>抢优惠券</button>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		function fontSize(){
+			var html = document.getElementsByTagName("html")[0];
+			var w = document.documentElement.clientWidth||document.body.clientWidth;
+			html.style.fontSize = w*20/750 + "px";
+			console.log(w*20/750);
+		}
+		$(function(){
+			fontSize();
+
+			$('button').on('click',function(){
+				var val = $('.phone_num').val();
+				if(val.length<11){
+					alert('您输入的手机号码格式有误，请重新输入')
+				}else{
+					window.location.href = './coupon.html'
+				}
+			})
+		})
+	</script>
+</html>
